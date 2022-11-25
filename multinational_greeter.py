@@ -4,18 +4,18 @@ def langsupport():
     """
     pick between given languages
     """
-    language = int('1. English\n2. Espanol\n3.Deutsch\n')
+    return int(input('1. English\n2. Espanol\n3. Deutsch\n'))
 
 def name_input():
     """
     takes name from user, prints it to console
     """
     if language == 1:
-        name = int(input('What is your name?\n'))
+        name = input('What is your name?\n')
     if language == 2:
-        name = int(input('Cual es tu nombre?\n'))
+        name = input('Cual es tu nombre?\n')
     if language == 3:
-        name = int(input('Wie heise?\n'))
+        name = input('Wie heise?\n')
     greet(name)
 
 
@@ -30,5 +30,5 @@ def greet(name):
     if language == 3:
         print('Guten Tag, ' + str(name))
 
-
+language = langsupport()
 name_input()
